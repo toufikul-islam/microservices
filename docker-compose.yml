@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  user-service:
+    build:
+      context: ./user-service
+    ports:
+      - "5000:5000"
+    environment:
+      - POSTGRES_DB=users_db
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    depends_on:
+      - user-db
+
+  product-service:
+    build:
+      context: ./product-service
+    ports:
+      - "5001:5001"
+    depends_on:
+      - product-db
+
+  user-db:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: users_db
+    ports:
+      - "5432:5432"
+
+  product-db:
+    image: mongo
+    ports:
+      - "27017:27017"
