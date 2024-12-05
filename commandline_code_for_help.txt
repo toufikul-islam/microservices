@@ -1,0 +1,14 @@
+docker build -t user_service .
+docker run -p 4200:4200 user_service
+
+docker images
+docker tag user_service:latest toufikulislam/microservices:latest
+docker images
+docker login
+docker push toufikulislam/microservices:tagname
+
+minikube start --driver=docker
+kubectl get nodes
+kubectl apply -f deployment.yaml
+kubectl get pods
+kubectl get services
