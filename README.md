@@ -44,8 +44,8 @@ cd microservices
 docker build -t user_service:latest -f user_service/Dockerfile user_service/
 docker build -t product_service:latest -f product_service/Dockerfile product_service/
 docker build -t order_service:latest -f order_service/Dockerfile order_service/
-docker build -t payment_service:latest -f order_service/Dockerfile payment_service/
-docker build -t notification_service:latest -f order_service/Dockerfile notification_service/
+docker build -t payment_service:latest -f payment_service/Dockerfile payment_service/
+docker build -t notification_service:latest -f notification_service/Dockerfile notification_service/
 docker build -t api_gateway:latest -f api_gateway/Dockerfile api_gateway/
 ```
 
