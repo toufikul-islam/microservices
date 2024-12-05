@@ -25,7 +25,7 @@ This project is a simple e-commerce application built using microservices archit
 ## Prerequisites
 
 - Docker
-- Kubernetes
+- Kubernetes (minikube)
 - Python 3.9
 - Flask
 - NGINX
