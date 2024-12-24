@@ -5,21 +5,14 @@ This project is a simple e-commerce application built using microservices archit
 ## Table of Contents
 
 - [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Services](#services)
-  - [User Service](#user-service)
-  - [Product Service](#product-service)
-  - [Order Service](#order-service)
-  - [Payment Service](#payment-service)
-  - [Notification Service](#notification-service)
-  - [API Gateway](#api-gateway)
-- [Monitoring and Logging](#monitoring-and-logging)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
-
+- [API Gateway](#api-gateway)
+- [Kubernetes](#kubernetes)
+- [Integration Test](#integration-tests)
+- [User Service](#user-service)
+- [Product Service](#product-service)
+- [Order Service](#order-service)
+- [Payment Service](#payment-service)
+- [Notification Service](#notification-service)
 
 
 ## Prerequisites
